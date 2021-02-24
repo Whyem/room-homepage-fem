@@ -227,7 +227,7 @@ nav{
     position: relative;
 
     >img{
-        width: 805px;
+        width: 887px;
         @include breakpoint-down(){
             width: 100%;
         }
@@ -274,7 +274,7 @@ nav{
 
     &_light{
         >img{
-            width: 420px;
+            width: 463px;
 
             @include breakpoint-down(){
                 width: 100%;
@@ -285,7 +285,7 @@ nav{
     &_dark{
         
         >img{
-            width: 402px;
+            width: 443px;
 
             @include breakpoint-down(){
                 width: 100%;
@@ -314,8 +314,8 @@ nav{
     transition: all 400ms ease-in-out;
 
     @include breakpoint-up(){
-        width: 6.41rem;
-        height: 6.41rem;
+        width: 7.083rem;
+        height: 7.083rem;
     }
 
     &:hover{

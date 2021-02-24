@@ -248,7 +248,7 @@ img {
 }
 
 .article > img {
-  width: 805px;
+  width: 887px;
 }
 
 @media (max-width: 376px) {
@@ -298,7 +298,7 @@ img {
 }
 
 .about_light > img {
-  width: 420px;
+  width: 463px;
 }
 
 @media (max-width: 376px) {
@@ -308,7 +308,7 @@ img {
 }
 
 .about_dark > img {
-  width: 402px;
+  width: 443px;
 }
 
 @media (max-width: 376px) {
@@ -336,8 +336,8 @@ img {
 
 @media (min-width: 376px) {
   .black_btn {
-    width: 6.41rem;
-    height: 6.41rem;
+    width: 7.083rem;
+    height: 7.083rem;
   }
 }
 

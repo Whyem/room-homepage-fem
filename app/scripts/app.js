@@ -1,6 +1,6 @@
 var current_index = 0;
 var h1s = ["Discover innovative ways to decorate","We are available all across the globe","Manufactured with the best materials"];
-var ps = ["Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.",
+var ps = ["We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
             "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.",
             "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."
         ];
@@ -51,6 +51,7 @@ function displayArticle(i){
     $("#desc").text(ps[i]);
 
     $(".article__image").attr("src","images/"+device+"-image-hero-"+String(i+1)+".jpg");
+    console.log(i);
     
 
     var textWrapperH1 = document.querySelector('#title');
@@ -65,13 +66,13 @@ function displayArticle(i){
                                     targets: '#title',
                                     opacity: [0,1],
                                     easing: "easeOutExpo",
-                                    duration: 300,
-                                    //delay: (el, i) => 200 + 30 * i
+                                    duration: 800,
+                                    
                                     }).add({
                                         targets: '#desc',
                                         opacity: [0,1],
                                         easing: "easeOutExpo",
-                                        duration: 300,
+                                        duration: 400,
                                         delay: (el, i) => 300 + 30 * i
                                         });
 
@@ -79,8 +80,8 @@ function displayArticle(i){
                             .add({
                             targets: '.article__image',
                             opacity: [0,1],
-                            easing: "easeOutExpo",
-                            duration: 1200
+                            easing: "linear",
+                            duration: 1000,
                                 });
 
     image_animation.restart();
